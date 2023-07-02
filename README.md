@@ -1,35 +1,31 @@
 # Build APK using GitHub Actions
 
-This repository provides a GitHub Actions workflow to automate the process of building Flutter APKs whenever code is pushed to the main branch. Follow the steps below to set up this workflow in your Flutter project.
+This repository provides a GitHub Actions workflow to automate the process of building Flutter APKs whenever code is pushed to the main branch.
 
-## Prerequisites
+## Setup
 
-- Flutter SDK installed on your development machine.
-- Git installed on your development machine.
-- A GitHub account.
-
-## Getting Started
+To set up the code for building Flutter APKs using GitHub Actions, follow these simple steps:
 
 1. **Fork the Repository**: Click the "Fork" button at the top-right corner of this repository to create your own copy.
 
-2. **Clone the Repository**: Clone the forked repository to your local development environment:
+2. **Copy the Workflow File**: In your Flutter project, copy the `.github/workflows/build-apk.yml` file from this repository.
 
-   ```shell
-   git clone https://github.com/your-username/build-apk.git
-   cd build-apk
-Copy the Workflow File: Copy the .github/workflows/build-apk.yml file from this repository to the root directory of your Flutter project.
+3. **Paste the Workflow File**: Paste the copied `build-apk.yml` file into the `.github/workflows/` directory of your Flutter project.
 
-Update the Workflow: Open the copied build-apk.yml file and make any necessary modifications to suit your project's needs. For example, you can customize the Flutter channel or adjust the target platforms for the APK build.
+4. **Commit and Push**: Commit the changes to your Flutter project repository.
 
-Commit and Push: Commit the changes to your Flutter project repository:
+5. **Enable GitHub Actions**: Go to your Flutter project repository on GitHub and navigate to the "Actions" tab. Enable GitHub Actions for the repository.
 
-git add .
-git commit -m "Add build APK workflow"
-git push origin main
+6. **Run the Workflow**: Once GitHub Actions is enabled, the workflow will automatically run whenever new code is pushed to the main branch.
 
+7. **Download the APK**: After the workflow completes, you can download the generated APK file by going to the "Actions" tab, selecting the workflow run, and navigating to the "Artifacts" section.
 
-3. Enable GitHub Actions: Go to your Flutter project repository on GitHub and navigate to the "Actions" tab. Enable GitHub Actions for the repository.
+That's it! Now your Flutter project is set up to automatically build APKs whenever you push new code to the main branch. You can find the generated APK in the "Artifacts" section of the workflow run in the GitHub Actions tab.
 
-4. Run the Workflow: Once GitHub Actions is enabled, the workflow will automatically run whenever new code is pushed to the main branch. You can check the workflow status and logs in the "Actions" tab.
+## Contributing
 
-5. Retrieve the APK: After the workflow completes, the generated APK file will be available as an artifact. You can download the APK by going to the "Actions" tab, selecting the workflow run, and navigating to the "Artifacts" section.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
